@@ -1,0 +1,17 @@
+<%-include('header')-%>
+
+<div class="container text-center mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div id="log-out-main" class="border py-5 mt-5 text-center">
+                <h3>Welcome to Express Dashboard</h3>
+                <h5 class="mb-4"><%= locals.user ? user : "User" %></h5>
+                <form action="/route/logout" method="POST">
+                    <button type="submit" class="btn btn-danger">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-include('footer')-%>
