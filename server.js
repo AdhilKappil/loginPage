@@ -30,7 +30,6 @@ app.use(
 app.use("/route", router);
 
 // Home route
-
 app.get("/", nocache(), (req, res) => {
   if (req.session.user) {
      res.redirect("/route/dashboard");
